@@ -1,3 +1,5 @@
+"use client";
+
 import { getUserData } from "@/handlers/util";
 import Image from "next/image";
 import Link from "next/link";
@@ -12,6 +14,9 @@ export default function Home() {
       <Link href="/teams">This goes to the teams page</Link>
       <Link href="/admin-page">
         This goes to the admin page inside of a route group.
+      </Link>
+      <Link href="/protected">
+        This goes to the admin page inside of a route group that is protected.
       </Link>
       <button
         onClick={() => {

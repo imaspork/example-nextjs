@@ -10,10 +10,13 @@ export default function CreateLayout({
 }) {
   return (
     <section style={{ position: "relative", paddingTop: "64px" }}>
-      <SignedIn>{children}</SignedIn>
+      {/* comment out children when you add auth to the application */}
+      {children}
+      {/* uncomment code below for when auth is installed */}
+      {/* <SignedIn>{children}</SignedIn>
       <SignedOut>
         <RedirectToSignUp />
-      </SignedOut>
+      </SignedOut> */}
     </section>
   );
 }
